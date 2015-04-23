@@ -1,0 +1,21 @@
+<html>
+
+	<body>
+		<h1>Hello</h1>
+		<script type="text/javascript" src="json-rpc.js"></script>
+		<script type="text/javascript">
+	      CallJsonRpc("Meteo.GetRainInfo",
+	        {},
+	        function(oResult) {
+	          console.log("OK : ", oResult);
+	          },
+	        function(oResult) {
+	          console.log("Error : ", oResult.response);
+	          });
+		</script>
+	</body>
+
+
+
+
+</html>
